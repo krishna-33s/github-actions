@@ -23,6 +23,6 @@ jobs:
 
       - name: Run a env variables
         run: |
-          echo "Project name: ${{ env.Project }}"
-          echo "Component name: ${{ env.component }}"
-          echo "Environment: ${{ env.environment }}"
+          echo "Project name: $Project"
+          echo "Component name: $component"
+          echo "Environment: $environment"
