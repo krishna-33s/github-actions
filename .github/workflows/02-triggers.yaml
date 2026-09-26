@@ -6,7 +6,7 @@ on: workflow_dispatch
 
 jobs:
   # manual workflow is the name of the job
-  manual workflow:
+  triggers:
     # Github managed runners are used to run the job
     runs-on: ubuntu-latest
 
