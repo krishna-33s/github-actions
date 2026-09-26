@@ -51,10 +51,10 @@ jobs:
 
       - name: version and image-name
         run: |
-          echo "version=1.0.0" >> $GITHUB_ENV
+          echo "versions=1.0.0" >> $GITHUB_ENV
           echo "image-name=payment" >> $GITHUB_ENV
 
       - name: refer the variables of previous setup    
         run: |
-          echo "version: $version"
-          echo "image-name: $image-name"
+          echo "version: $versions"
+          echo "image: $image-name"
