@@ -3,7 +3,7 @@ name: trigger workflow
 on: 
   push:
     branches:
-      - feature/*
+      - main
   # workflow_dispatch :- we can trigger manually from the Actions tab
   #[push] #triggers the workflow on every push to the repository
 
