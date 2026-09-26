@@ -13,4 +13,6 @@ jobs:
     steps:
       # Runs a single command using the runner's shell
       - name: Run acontext info
-        run: echo "${{ toJson(github) }}"
+        run: |
+          echo "${{ toJson(github) }}"
+          echo "branch name: ${{ github.ref_name }}"
