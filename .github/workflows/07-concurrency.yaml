@@ -8,4 +8,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: don't allow parallel execution in same branch
-        run: echo "sleep 70"
+        run: echo sleep 70
