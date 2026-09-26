@@ -57,4 +57,4 @@ jobs:
       - name: refer the variables of previous setup    
         run: |
           echo "version: $versions"
-          echo "image: $image-name"
+          echo "image: $image"
