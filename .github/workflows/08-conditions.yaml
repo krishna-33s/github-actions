@@ -6,9 +6,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: if branch is main then execute 
-        if: github.ref_name == "main"
+        if: github.ref_name == 'main'
         run: echo " this is executed in main branch"
 
       - name: if branch is feature then execute 
-        if: github.ref_name == "feature-*"
+        if: github.ref_name == 'feature-*'
         run: echo " this is executed in feature branch"  
