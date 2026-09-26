@@ -80,3 +80,6 @@ jobs:
 
       - name: print job context
         run: echo "${{ toJson(job) }}"
+
+      - name: print job context
+        run: echo "${{ toJson(runner) }}"  
