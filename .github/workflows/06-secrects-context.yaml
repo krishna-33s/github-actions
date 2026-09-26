@@ -52,7 +52,7 @@ jobs:
       - name: version and image-name
         run: |
           echo "versions=1.0.0" >> $GITHUB_ENV
-          echo "image-name=payment" >> $GITHUB_ENV
+          echo "image=payment" >> $GITHUB_ENV
 
       - name: refer the variables of previous setup    
         run: |
