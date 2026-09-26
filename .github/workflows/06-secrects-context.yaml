@@ -47,4 +47,14 @@ jobs:
       - name: refer the previous steps output  
         run: |
           echo "version: ${{ steps.tags.outputs.version }}"
-          echo "image-name: ${{ steps.tags.outputs.image-name }}"  
+          echo "image-name: ${{ steps.tags.outputs.image-name }}" 
+
+      - name: version and image-name
+        run: |
+          echo "version=1.0.0" >> $GITHUB_ENV
+          echo "image-name=payment" >> $GITHUB_ENV
+
+      - name: refer the variables of previous setup    
+        run: |
+          echo "version: $version"
+          echo "image-name: $image-name"
