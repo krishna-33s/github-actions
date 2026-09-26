@@ -2,7 +2,7 @@ name: trigger workflow
 
 on: 
   pull_request:
-  types: [opened, reopened]
+    types: [opened, reopened]
     branches:
       - releases/*  #when pullrequest is opened then it will trigger to release branch
   # push:
