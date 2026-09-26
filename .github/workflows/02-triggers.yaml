@@ -1,0 +1,17 @@
+name: trigger workflow
+
+on: workflow_dispatch
+  #[push] #triggers the workflow on every push to the repository
+
+
+jobs:
+  # manual workflow is the name of the job
+  manual workflow:
+    # Github managed runners are used to run the job
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Runs a single command using the runner's shell
+      - name: Run a one-line script
+        run: echo "Hello, krishna"
