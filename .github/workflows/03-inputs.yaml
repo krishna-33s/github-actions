@@ -1,0 +1,32 @@
+name: trigger workflow
+
+on: 
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        description: 'Log level'
+        required: true
+        default: 'warning'
+        type: choice
+        options:
+        - info
+        - warning
+        - debug
+      tags:
+        description: 'Test scenario tags'
+        required: false
+        type: boolean
+
+jobs:
+  # manual workflow is the name of the job
+  triggers:
+    # Github managed runners are used to run the job
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Runs a single command using the runner's shell
+      - name: Run a one-line script
+        run: |
+          echo "${{ inputs.loglevel}}"
+          echo "${{ inputs.tags }}"
