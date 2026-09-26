@@ -1,9 +1,13 @@
 name: trigger workflow
 
 on: 
-  push:
+  pull_request:
+  types: [opened, reopened]
     branches:
-      - main
+      - releases/*  #when pullrequest is opened then it will trigger to release branch
+  # push:
+  #   branches:
+  #     - main  :- it can trigger mainly when we push to main branch
   # workflow_dispatch :- we can trigger manually from the Actions tab
   #[push] #triggers the workflow on every push to the repository
 
