@@ -20,9 +20,12 @@ jobs:
         run: |
           echo "${{ toJson(github) }}"
           echo "branch name: ${{ github.ref_name }}"
-
-      - name: Run a env variables
-        run: |
           echo "Project name: $Project"
           echo "Component name: $component"
           echo "Environment: $environment"
+
+      # - name: Run a env variables
+      #   run: |
+      #     echo "Project name: $Project"
+      #     echo "Component name: $component"
+      #     echo "Environment: $environment"
