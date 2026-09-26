@@ -1,0 +1,11 @@
+name: main branch workflow
+on: [push]
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref_name}} #main branch workflow-main
+
+jobs:
+  main-branch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: don't allow parallel execution in same branch
+        run: echo "sleep 70"
