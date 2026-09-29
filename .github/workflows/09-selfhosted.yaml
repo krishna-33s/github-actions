@@ -1,0 +1,10 @@
+name: self hosted
+on: [push]
+
+jobs:
+  selfhosted:
+    runs-on: self-hosted
+    
+    steps:
+      - name: runs on self-hosted runner
+        run: echo "this is executed in self-hosted runner" 
